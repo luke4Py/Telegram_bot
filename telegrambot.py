@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
 """
-Created on Mon Nov  2 10:56:21 2020
-
 @author: SAMUEL LUKE
 """
 
@@ -18,25 +15,8 @@ from cric_api import *
 
 
 
-"""
-connection  = sqlalchemy.create_engine("mysql+pymysql://root:M@*131132133134135#@localhost/telegram")
 
-connection.execute("create table if not exists info
-(
-Update_id int Not null unique,
-message_id int not null,
-from_id int not null,
-is_bot char(50),
-first_name char(255),
-language_code char(10),
-chat_id int not null,
-date int not null,
-text text(64000)
-);")
-
-"""
-
-TOKEN = "1473761708:AAFvVbqrqp4ggpApoSed0DWegRFviRjhWVU"
+TOKEN = "*****************************"  #Enter your Telegram Token
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 def get_url(url):
